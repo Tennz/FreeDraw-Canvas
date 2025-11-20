@@ -6,7 +6,7 @@ from ttkbootstrap.constants import *
 # =============================================================================
 # APP WINDOW SETUP
 # =============================================================================
-# This section initializes the application window using ttkbootstrap's 'darkly'
+# This section initializes the application window using ttkbootstrap's 'flatly'
 # theme so the look matches the design you requested. Variables declared here
 # are global state used across the functions below (brush size, current color,
 # eraser flag, stroke history, etc.).
@@ -26,7 +26,7 @@ from ttkbootstrap.constants import *
 #
 # We keep these as module-level globals so functions bound to UI widgets can
 # access and modify them without object-wrapping the entire app.
-style = tb.Style(theme="darkly")
+style = tb.Style(theme="flatly")
 root = style.master
 root.title("FreeDraw Canvas")
 root.geometry("1000x900")
@@ -454,3 +454,4 @@ canvas.configure(scrollregion=(0, 0, 1000, 700))
 # and button interactions).
 if __name__ == "__main__":
     root.mainloop()
+
